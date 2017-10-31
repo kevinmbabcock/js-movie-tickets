@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Tickets</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Choose your tickets:</h1>
+      <form id="newTicket">
+        <h2>Select a movie:</h2>
+        <select class="form-control" id="movie">
+          <option value="old-school">Old School</option>
+          <option value="lebowski">Big Lebowski</option>
+          <option value="hangover">The Hangover</option>
+          <option value="bull-durham">Bull Durham</option>
+        </select>
+        <h2>Select time:</h2>
+        <select class="form-control" id="time">
+          <option value="morning">9-12</option>
+          <option value="afternoon">12-3</option>
+          <option value="evening">3-6</option>
+          <option value="night">6-close</option>
+        </select>
+        <h2>Enter your age:</h2>
+        <div class="form-group">
+          <input type="text" class="form-control" id="age">
+        </div>
+
+        <button type="submit" class="btn">Submit</button>
+      </form>
+      <div class="showPrice">
+        <h2>Ticket Price:</h2>
+        <p id="ticketPrice"></p>
+      </div>
+    </div>
+  </body>
+</html>
