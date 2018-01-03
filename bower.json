@@ -1,0 +1,19 @@
+{
+  "name": "movie-tickets",
+  "description": "",
+  "main": "gulpfile.js",
+  "license": "ISC",
+  "homepage": "https://github.com/kevinmbabcock/movie-tickets",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "moment": "^2.20.1"
+  }
+}
