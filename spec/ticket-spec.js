@@ -1,9 +1,9 @@
-var Ticket = require('./../js/ticket.js').ticketModule;
+import { Ticket } from './../js/ticket.js';
 
 describe('Ticket', function () {
-  var reusableTicket;
-  var reusableTicket2;
-  var reusableTicket3;
+  let reusableTicket;
+  let reusableTicket2;
+  let reusableTicket3;
 
   beforeEach(function() {
     reusableTicket = new Ticket("Old School", "morning", 20);

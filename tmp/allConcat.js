@@ -1,4 +1,4 @@
-var Ticket = require('./../js/ticket.js').ticketModule;
+import { Ticket } from './../js/ticket.js';
 
 $(document).ready(function() {
 
@@ -6,13 +6,13 @@ $(document).ready(function() {
   $("form#newTicket").submit(function(event) {
     event.preventDefault();
 
-    var movie = $("#movie").val();
-    var time = $("#time").val();
-    var age = parseInt($("#age").val());
+    let movie = $("#movie").val();
+    let time = $("#time").val();
+    let age = parseInt($("#age").val());
 
-    var newTicket = new Ticket (movie, time, age);
+    let newTicket = new Ticket (movie, time, age);
 
-    var ticketPrice = newTicket.ticketPrice();
+    let ticketPrice = newTicket.ticketPrice();
     $("#ticketPrice").text(ticketPrice);
     $(".showPrice").show();
   });
